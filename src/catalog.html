@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sfpro">
+    <!-- NAVBAR -->
+    <header
+      class="flex h-64 items-center justify-between px-16 shadow-[0px_0px_20px_0px_#CBCACA40]"
+    >
+      <!-- LOGO -->
+      <a href="#Home">
+        <img src="./assets/icons/Logo.svg" alt="Logo" class="h-32 w-32" />
+      </a>
+      <!-- LOGO -->
+
+      <!-- TOMBOL CATALOG & SEARCH -->
+      <div class="flex items-center gap-6">
+        <!-- CATALOG -->
+        <a
+          href="#Catalog"
+          class="flex h-40 w-40 items-center justify-center rounded-xl border border-neutral-300"
+        >
+          <img
+            src="./assets/icons/Catalog.svg"
+            alt="Catalog"
+            class="h-20 w-20"
+          />
+        </a>
+        <!-- SEARCH -->
+        <input
+          type="text"
+          class="h-40 max-w-190 rounded-xl border border-neutral-300 backdrop-blur-[40px]"
+        />
+      </div>
+      <!-- TOMBOL CATALOG & SEARCH -->
+
+      <!-- CART & HAMBURG -->
+      <div class="flex justify-between">
+        <!-- CART -->
+        <a href="#Checkout">
+          <img src="./assets/icons/Shopping-cart.svg" alt="Cart" />
+          <span></span>
+        </a>
+        <!-- HAMBURG -->
+        <img src="./assets/icons/Hamburger.svg" alt="" />
+      </div>
+      <!-- CART & HAMBURG -->
+    </header>
+    <!-- NAVBAR -->
+
+    <!-- SIDE PANEL FILTER -->
+    <aside class="hidden"></aside>
+    <!-- SIDE PANEL FILTER -->
+
+    <!-- HERO -->
+    <main class="flex flex-col py-24">
+      <!-- JUDUL -->
+      <section class="px-16 pb-4">
+        <h1 class="text-display-xs font-bold text-neutral-950">Catalog</h1>
+      </section>
+      <!-- JUDUL -->
+
+      <!-- PRODUCT LIST HEADER -->
+      <section class="flex flex-col gap-12 px-16">
+        <!-- PRODUCT COUNT -->
+        <p class="text-xs font-normal text-neutral-700">Showing 160 products</p>
+        <!-- PRODUCT COUNT -->
+
+        <!-- FILTER & SORT -->
+        <div class="flex gap-8">
+          <!-- FILTER -->
+          <div class="relative inline-flex w-1/2">
+            <button
+              class="w-full rounded-xl border border-neutral-300 px-12 py-8 text-left text-sm font-normal text-neutral-950"
+            >
+              Filter
+            </button>
+            <img
+              src="./assets/icons/Filter.svg"
+              alt="chevron"
+              class="pointer-events-none absolute top-1/2 right-1 -translate-y-1/2 transform"
+            />
+          </div>
+          <!-- SORT -->
+          <select
+            name="Sort"
+            id=""
+            class="w-1/2 rounded-xl border border-neutral-300 px-12 py-8 text-sm font-normal text-neutral-950"
+          >
+            <option value="latest">Latest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+        <!-- FILTER & SORT -->
+      </section>
+      <!-- PRODUCT LIST HEADER -->
+
+      <!-- PRODUCT GRID -->
+      <section
+        class="grid grid-cols-2 gap-16 px-[15.5px] pt-16 pb-8 lg:grid-cols-4"
+      >
+        <!-- CARD 1 -->
+        <div
+          class="flex flex-col rounded-xl shadow-[0px_0px_20px_0px_#CBCACA40]"
+        >
+          <img
+            src="./assets/images/Product-Image.svg"
+            alt="product_img"
+            class="rounded-xs"
+          />
+          <!-- INFO -->
+          <div class="p-12">
+            <p class="text-sm font-normal text-neutral-950">
+              Sneakers Court Minimalis
+            </p>
+            <p class="text-sm font-bold text-neutral-950">Rp275.000</p>
+            <!-- RATING -->
+            <div class="flex items-center">
+              <img src="./assets/icons/Star.svg" alt="Star" class="h-20 w-20" />
+              <p class="text-sm font-normal text-neutral-950">4.9</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="flex flex-col rounded-xl shadow-[0px_0px_20px_0px_#CBCACA40]"
+        >
+          <img
+            src="./assets/images/Product-Image-1.svg"
+            alt="product_img"
+            class="rounded-xs"
+          />
+          <!-- INFO -->
+          <div class="p-12">
+            <p class="text-sm font-normal text-neutral-950">
+              Kaos Crewneck Esensial
+            </p>
+            <p class="text-sm font-bold text-neutral-950">Rp800.000</p>
+            <!-- RATING -->
+            <div class="flex items-center">
+              <img src="./assets/icons/Star.svg" alt="Star" class="h-20 w-20" />
+              <p class="text-sm font-normal text-neutral-950">4.8</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="flex flex-col rounded-xl shadow-[0px_0px_20px_0px_#CBCACA40]"
+        >
+          <img
+            src="./assets/images/Product-Image-2.svg"
+            alt="product_img"
+            class="rounded-xs"
+          />
+          <!-- INFO -->
+          <div class="p-12">
+            <p class="text-sm font-normal text-neutral-950">
+              Tas Selempang Klasik
+            </p>
+            <p class="text-sm font-bold text-neutral-950">Rp1.600.000</p>
+            <!-- RATING -->
+            <div class="flex items-center">
+              <img src="./assets/icons/Star.svg" alt="Star" class="h-20 w-20" />
+              <p class="text-sm font-normal text-neutral-950">4.7</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="flex flex-col rounded-xl shadow-[0px_0px_20px_0px_#CBCACA40]"
+        >
+          <img
+            src="./assets/images/Product-Image-3.svg"
+            alt="product_img"
+            class="rounded-xs"
+          />
+          <!-- INFO -->
+          <div class="p-12">
+            <p class="text-sm font-normal text-neutral-950">Kaos Soft Touch</p>
+            <p class="text-sm font-bold text-neutral-950">Rp650.000</p>
+            <!-- RATING -->
+            <div class="flex items-center">
+              <img src="./assets/icons/Star.svg" alt="Star" class="h-20 w-20" />
+              <p class="text-sm font-normal text-neutral-950">4.6</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT GRID -->
+    </main>
+    <!-- HERO -->
+    <footer></footer>
+  </body>
+</html>

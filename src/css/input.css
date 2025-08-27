@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sfpro: 'Inter', 'sans-serif';
+  /* --font-weight-regular: 400; gk perlu, sama dgn normal */
+
+  --text-display-3xl: 3.75rem;
+  --text-display-3xl--line-height: 4.5rem;
+
+  --text-display-2xl: 3rem;
+  --text-display-2xl--line-height: 3.75rem;
+  --text-display-2xl--letter-spacing: -0.02em;
+
+  --text-display-xl: 2.5rem;
+  --text-display-xl--line-height: 3rem;
+  --text-display-xl--letter-spacing: -0.02em;
+
+  --text-display-lg: 2.25rem;
+  --text-display-lg--line-height: 2.75rem;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-display-md: 2rem;
+  --text-display-md--line-height: 2.5rem;
+
+  --text-display-sm: 1.75rem;
+  --text-display-sm--line-height: 2.375rem;
+
+  --text-display-xs: 1.5rem;
+  --text-display-xs--line-height: 2.25rem;
+
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2.125rem;
+
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 2rem;
+
+  --text-md: 1rem;
+  --text-md--line-height: 1.875rem;
+
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.75rem;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5rem;
+
+  --color-neutral-25: #fdfdfd;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e9eaeb;
+  --color-neutral-300: #d5d7da;
+  --color-neutral-400: #a4a7ae;
+  --color-neutral-500: #717680;
+  --color-neutral-600: #535862;
+  --color-neutral-700: #414651;
+  --color-neutral-800: #252b37;
+  --color-neutral-900: #181d27;
+  --color-neutral-950: #0a0d12;
+
+  --color-primary-100: #0a0d12;
+
+  --color-accent-red: #d9206e;
+  --color-accent-green: #079455;
+  --color-accent-yellow: #fdb022;
+
+  --color-base-white: #fff;
+  --color-base-black: #000;
+
+  /* full,none sama */
+  --radius-xxs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+
+  /* biar gampang p-140 = 140px */
+  --spacing: 1px;
+}
