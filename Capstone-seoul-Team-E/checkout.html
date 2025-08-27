@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--- My Style-->
+    <link rel="stylesheet" href="css/checkout.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Home Section -->
+  <body>
+    <!-- Home Section -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/shirt.png" alt="Logo" />
+      </a>
+
+      <!-- LEFT SECTION -->
+      <div class="navbar-left">
+        <a href="#" class="btn-catalog">
+          <img src="./assets/catalog.png" alt="Catalog"
+        /></a>
+        <a href="#" class="btn-search">
+          <i data-feather="search"></i> Search
+        </a>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div class="navbar-right">
+        <a href="#" id="shopping-cart">
+          <i data-feather="shopping-cart"></i>
+        </a>
+        <a href="#" class="user"> <i data-feather="user"></i> John Doe </a>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div
+      class="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-lg shadow flex gap-8"
+    >
+      <!-- LEFT SECTION -->
+      <div class="w-2/3 space-y-6">
+        <!-- Shipping Address -->
+        <div>
+          <h2 class="text-lg font-bold mb-3">Shipping Address</h2>
+          <div class="grid grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full border px-3 py-2 rounded col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="Phone Number"
+              class="w-full border px-3 py-2 rounded col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="City"
+              class="w-full border px-3 py-2 rounded col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="Postal Code"
+              class="w-full border px-3 py-2 rounded col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="Address"
+              class="w-full h-24 border px-3 py-2 rounded col-span-2 p-6"
+            />
+
+                    </div>
+        </div>
+
+        <!-- Shipping Method -->
+        <div>
+          <h2 class="text-lg font-bold mb-3">Shipping Method</h2>
+          <select class="border p-2 rounded w-full">
+            <option>Select Shipping</option>
+            <option>JNE</option>
+            <option>J&T</option>
+            <option>POS Indonesia</option>
+          </select>
+        </div>
+
+        <!-- Product -->
+        <div>
+          <h2 class="text-lg font-bold mb-3">Product</h2>
+          <div class="flex justify-between items-center border p-3 rounded">
+            <div class="flex items-center gap-3">
+              <img src="./assets/p2.png" alt="Kaos" class="w-14 h-14 rounded" />
+              <div>
+                <p class="font-bold">Kaos Katun Premium</p>
+                <span class="text-sm text-gray-600">T-Shirt</span>
+              </div>
+            </div>
+            <p class="font-bold">1 x Rp1.100.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div class="w-1/3 space-y-6">
+        <!-- Payment Method -->
+        <div>
+          <h2 class="text-lg font-bold mb-3">Payment Method</h2>
+          <div class="space-y-2">
+            <label
+              class="flex items-center justify-between border p-3 rounded cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/bni.png"
+                  alt="BNI"
+                  class="w-10 h-6 object-contain"
+                />
+                <span>BNI Virtual Account</span>
+              </div>
+              <!-- Kanan: radio button -->
+              <input
+                type="radio"
+                name="payment"
+                class="w-5 h-5 text-blue-600"
+              />
+            </label>
+            <label
+              class="flex items-center justify-between border p-3 rounded cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/bri.png"
+                  alt="BRI"
+                  class="w-10 h-6 object-contain"
+                />
+                <span>BRI Virtual Account</span>
+              </div>
+              <input
+                type="radio"
+                name="payment"
+                class="w-5 h-5 text-blue-600"
+              />
+            </label>
+            <label
+              class="flex items-center justify-between border p-3 rounded cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/bca.png"
+                  alt="BCA"
+                  class="w-10 h-6 object-contain"
+                />
+                <span>BCA Virtual Account</span>
+              </div>
+              <input
+                type="radio"
+                name="payment"
+                class="w-5 h-5 text-blue-600"
+              />
+            </label>
+            <label
+              class="flex items-center justify-between border p-3 rounded cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/mandiri.png"
+                  alt="Mandiri"
+                  class="w-10 h-6 object-contain"
+                />
+                <span>Mandiri Virtual Account</span>
+              </div>
+              <input
+                type="radio"
+                name="payment"
+                class="w-5 h-5 text-blue-600"
+              />
+            </label>
+          </div>
+        </div>
+
+        <!-- Payment Summary -->
+        <div class="border p-4 rounded">
+          <h2 class="text-lg font-bold mb-3">Payment Summary</h2>
+          <div class="flex justify-between text-sm mb-2">
+            <span>Total Price of Goods</span>
+            <span class="font-bold">Rp1.100.000</span>
+          </div>
+          <div class="flex justify-between text-sm mb-2">
+            <span>Shipping cost</span>
+            <span class="font-bold">Rp10.000</span>
+          </div>
+          <hr class="my-2" />
+          <div class="flex justify-between font-bold text-lg">
+            <span>Total</span>
+            <span>Rp1.110.000</span>
+          </div>
+          <button
+            class="mt-4 w-full bg-black text-white font-bold py-2 rounded hover:bg-gray-800"
+          >
+            Pay Now
+          </button>
+        </div>
+      </div>
+    </div> 
+
+    <!-- FOOTER-->
+    <footer>
+  <div class="footer-left">
+    <img src="./assets/shirt.png" alt="">
+    <p>
+      Explore a realm of style with our fashion e-commerce platform, where shopping is effortless.
+      Experience a smooth journey with an extensive selection of trendy apparel, all delivered directly to your home.
+    </p>
+    <p><strong>Follow on Social Media</strong></p>
+  <div class="social-icons">
+  <a href="#"><i data-feather="facebook"></i></a>
+  <a href="#"><i data-feather="instagram"></i></a>
+  <a href="#"><i data-feather="linkedin"></i></a>
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.5 3c.6 1.6 2.1 2.7 3.8 2.9v2.2c-1.3 0-2.5-.4-3.8-1.1v6.6c0 3-2.4 5.4-5.4 5.4S1.7 16.6 1.7 13.6c0-2.9 2.4-5.4 5.4-5.4.5 0 .9.1 1.3.2v2.3c-.4-.2-.8-.3-1.3-.3-1.7 0-3 1.4-3 3s1.4 3 3 3c1.7 0 3-1.4 3-3V3h3.4z"/>
+    </svg>
+  </a>
+</div>
+  </div>
+
+
+  <div class="footer-columns">
+    <div class="footer-right">
+      <h2>E-Commerce</h2>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="Help">
+      <h2>Help</h2>
+      <ul>
+        <li><a href="#">How to Transact</a></li>
+        <li><a href="#">Payment Method</a></li>
+        <li><a href="#">How to Register</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    </section>
+    <!-- Feather Icon-->
+    <script>
+      feather.replace();
+    </script>
+    <!-- JS--> 
+     <script src="JS.script.js"></script>
+
+  </body>  
+</html>
