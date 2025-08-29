@@ -528,6 +528,16 @@ body {
   --container-w: 1200px; /* ubah sesuai layout situs */
 }
 
+.add-to-cart {
+  transform: scale(1.05);
+  color: #FFFFFF;
+  background-color: #0A0D12;
+  text-decoration: none;
+}
+.add-to-cart hover {
+  transform: scale(1.05);
+  background-color: #ff9800;
+}
 /* ---------- Reset singkat untuk footer ---------- */
 .site-footer,
 .site-footer * {
