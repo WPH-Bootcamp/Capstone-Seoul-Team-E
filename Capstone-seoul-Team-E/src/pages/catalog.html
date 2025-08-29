@@ -52,13 +52,14 @@
     </div>
 
     <h2 class="text-3xl font-semibold py-6 ml-5">Catalog</h2>
+    <p class="text-sm text-gray-500 md:hidden ml-5">Showing 160 products</p>
 
 <body class="bg-gray-50 font-sans">
 
   <div class="container mx-auto px-4 flex gap-6">
 
     <!-- Sidebar Filter -->
-       <aside class="w-1/4 bg-white p-4 rounded-2xl shadow">
+       <aside class="w-1/4 bg-white p-4 rounded-2xl shadow hidden md:inline h-fit">
       <h2 class="text-lg font-semibold mb-4">FILTER</h2>
            
       <!-- Categories -->
@@ -99,9 +100,10 @@
 
    
     <!-- Catalog -->
-     <main class="w-3/4">
+     <main class="w-full md:w-3/4">
         <div class="flex justify-between items-center mb-4">
-        <p class="text-sm text-gray-500">Showing 160 products</p>
+        <p class="text-sm text-gray-500 hidden md:block">Showing 160 products</p>
+        <button class="border rounded-md px-2 py-1 text-sm md:hidden">Filter ▼</button>
         <div>
           <select class="border rounded-md px-2 py-1 text-sm">
             <option>Latest</option>
@@ -112,7 +114,7 @@
           </div>
     
       <!-- Product Grid (4 kolom, 3 baris = 12 produk) -->
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
         <!-- Loop Produk -->
         <div class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition">
